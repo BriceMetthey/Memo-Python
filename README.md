@@ -378,22 +378,35 @@ print("c : x = ", c.x, " nb = ", c.nb)
 ```
 
 A : nb =  0
+
 Partie 1
+
 creation objet de type A
+
 A : nb =  1
+
 a : x =  3  nb =  1     
 
 Partie 2
+
 creation objet de type A
+
 A : nb =  2
+
 a : x =  3  nb =  2     
+
 b : x =  6  nb =  2     
+
 creation objet de type A
 
 Partie 3
+
 A : nb =  3
+
 a : x =  3  nb =  3     
+
 b : x =  6  nb =  3     
+
 c : x =  8  nb =  3     
 
 ## Héritage
