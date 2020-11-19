@@ -348,6 +348,54 @@ class Point:
         self.__y = y
 ```
 
+### Les attributs de classe
+
+```python
+class A:
+    nb = 0
+
+    def __init__(self, x):
+        print("creation objet de type A")
+        self.x = x
+        A.nb = A.nb + 1
+        
+print("A : nb = ", A.nb)
+print("Partie 1")
+a = A(3)
+print("A : nb = ", A.nb)
+print("a : x = ", a.x, " nb = ", a.nb)
+print("Partie 2")
+b = A(6)
+print("A : nb = ", A.nb)
+print("a : x = ", a.x, " nb = ", a.nb)
+print("b : x = ", b.x, " nb = ", b.nb)
+c = A(8)
+print("Partie 3")
+print("A : nb = ", A.nb)
+print("a : x = ", a.x, " nb = ", a.nb)
+print("b : x = ", b.x, " nb = ", b.nb)
+print("c : x = ", c.x, " nb = ", c.nb)
+```
+
+A : nb =  0
+Partie 1
+creation objet de type A
+A : nb =  1
+a : x =  3  nb =  1     
+
+Partie 2
+creation objet de type A
+A : nb =  2
+a : x =  3  nb =  2     
+b : x =  6  nb =  2     
+creation objet de type A
+
+Partie 3
+A : nb =  3
+a : x =  3  nb =  3     
+b : x =  6  nb =  3     
+c : x =  8  nb =  3     
+
 ## Héritage
 
 
