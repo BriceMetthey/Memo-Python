@@ -81,3 +81,52 @@ Notations racourcies :
 ou
 
 `print("A") if a > b else print("B")`
+
+
+## Les Tuples
+
+A partir des types de base, il est possible d’en élaborer de nouveaux. On les appelle des types construits.
+
+Un exemple de type construit est le tuple. Il permet de créer une **collection ordonnée de plusieurs éléments**.
+
+```python
+a = (3, 4, 7)
+print(type(a))
+=> <class 'tuple'>
+
+
+b, c = 5, 6
+
+
+(d, e) = (7, 8)
+
+
+f = (99, 204)
+u, v = f
+
+
+def test():
+     return (456, 789)
+
+s,t = test()
+```
+
+
+Comment itérer sur les éléments d’un tuple ?
+Comme une liste, il est possible de parcourir un tuple avec une boucle for.
+
+```python
+tuple = (5, 6, 7)
+
+for i in tuple:
+    print(i)
+```
+
+La valeur d’un élément du tuple est obtenue en utilisant la même syntaxe que pour une liste.
+
+```python
+print("Variable Tuple :",tuple[0])
+print("Variable Tuple :",tuple[1])
+print("Variable Tuple :",tuple[2])
+```
+
