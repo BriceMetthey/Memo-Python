@@ -315,6 +315,8 @@ On réalise la protection des attributs de notre classe Point grâce à l’util
 Pour avoir des attributs privés, leur nom doit débuter par __ 
 
 ```python
+
+class Point:
     def __init__(self, x, y):
         self.__x = x
         self.__y = y
