@@ -44,3 +44,32 @@ print("Calcul : " + str(calcul))
 calcul = 6 % 2
 print("Calcul : " + str(calcul))
 ```
+
+
+## Le IF ELSE
+
+```python
+x = -2
+if x > 0:
+    print(x, "est positif")
+else:
+    print(x, "est négatif ou nul")
+print("Fin")
+```
+
+Le mot clé `elif` Si la condition précedente n'est pas vraie, alors essaye cette condition :
+```python
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+```
+
+```python
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+```
