@@ -256,8 +256,8 @@ def scope_test():
 scope_test()
 print("In global scope:", spam)
 ```
-Ce qui donne :
 
+Ce qui donne :
 After local assignment: test spam
 After nonlocal assignment: nonlocal spam
 After global assignment: nonlocal spam
