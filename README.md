@@ -454,6 +454,80 @@ print("Partie 3 : nb objets = ", A.get_nb())
 
 - Il peut modifier un état de classe qui s'appliquerait à toutes les instances de la classe. Par exemple, il peut modifier une variable de classe qui sera applicable à toutes les instances.
 
+
+```python
+class Student(object):
+
+    @classmethod
+    def from_string(cls, name_str):
+        first_name, last_name = map(str, name_str.split(' '))
+        student = cls(first_name, last_name)
+        return student
+
+scott = Student.from_string('Scott Robinson')
+```
+
+We generally use **class method** to create factory methods. Factory methods return class object ( similar to a constructor ) for different use cases.
+
+We generally use **static methods** to create utility functions.
+
+### Méthode statique
+
+```python
+class C:
+    
+    @staticmethod
+    def maMethode(arg1, arg2, ...):
+        ...
+```
+
+Une méthode statique ne reçoit pas de premier argument implicite.
+
+- Une méthode statique est également une méthode liée à la classe et non à l'objet de la classe.
+
+- Une méthode statique ne peut pas accéder ou modifier l'état de la classe.
+
+- Il est présent dans une classe car il est logique que la méthode soit présente dans la classe.
+
+
+Ces types de méthodes ne sont généralement pas destinés à créer / instancier des objets,
+mais ils peuvent contenir un type de logique appartenant à la classe elle-même, comme une méthode d'assistance ou d'utilitaire.
+
+
+### Exemple plus long
+
+```python
+class ClassGrades:
+
+    def __init__(self, grades):
+        self.grades = grades
+
+    @classmethod
+    def from_csv(cls, grade_csv_str):
+        grades = map(int, grade_csv_str.split(', '))
+        cls.validate(grades)
+        return cls(grades)
+
+
+    @staticmethod
+    def validate(grades):
+        for g in grades:
+            if g < 0 or g > 100:
+                raise Exception()
+
+try:
+    # Try out some valid grades
+    class_grades_valid = ClassGrades.from_csv('90, 80, 85, 94, 70')
+    print 'Got grades:', class_grades_valid.grades
+
+    # Should fail with invalid grades
+    class_grades_invalid = ClassGrades.from_csv('92, -15, 99, 101, 77, 65, 100')
+    print class_grades_invalid.grades
+except:
+    print 'Invalid!'
+    
+```
+
 ## Héritage
 
 
