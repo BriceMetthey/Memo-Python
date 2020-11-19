@@ -179,8 +179,6 @@ for i in tuple:
     print(i)
 ```
 
-## xxx
-
 La valeur d’un élément du tuple est obtenue en utilisant la même syntaxe que pour une liste.
 
 ```python
@@ -189,3 +187,42 @@ print("Variable Tuple :",tuple[1])
 print("Variable Tuple :",tuple[2])
 ```
 
+## Les dictionnaires
+
+
+Un dictionnaire en Python va permettre de rassembler des éléments mais ceux-ci seront identifiés par une clé.
+
+`mon_dictionnaire = {"voiture": "véhicule à quatre roues", "vélo": "véhicule à deux roues"}`
+
+On accède à une valeur du dictionnaire en utilisant la clé entourée par des crochets avec la syntaxe suivante :
+
+`print(mon_dictionnaire["voiture"])`
+
+
+Ajouter un élément à un dictionnaire. Il suffit d’affecter une valeur pour la nouvelle clé.
+
+```python
+mon_dictionnaire["tricycle"] = "véhicule à trois roues"
+print(mon_dictionnaire["tricycle"])
+```
+
+Comment créer un dictionnaire ?
+
+```python
+nombre_de_pneus = {}
+nombre_de_pneus["voiture"] = 4
+nombre_de_pneus["vélo"] = 2
+nombre_de_pneus["tricycle"] = 3
+
+print(nombre_de_pneus)
+```
+
+Exemple boucles for avec un indice i
+
+```python
+for i in nombre_de_pneus.items():
+    print(i)
+
+for cle, valeur in nombre_de_pneus.items():
+    print("l'élément de clé", cle, "vaut", valeur)
+```
