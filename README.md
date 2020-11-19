@@ -29,3 +29,18 @@ Pour réaliser une division entière, il faut utiliser //
 calcul = 7 // 2
 print("Calcul : " + str(calcul))
 ```
+
+Pour une vraie division
+```python
+calcul = 7 / 2
+print("Calcul vrai division : " + str(calcul))
+```
+
+
+L’opérateur % (appelé opérateur modulo) fournit le reste de la division entière d’un nombre par un autre.
+```python
+calcul = 7 % 2
+print("Calcul : " + str(calcul))
+calcul = 6 % 2
+print("Calcul : " + str(calcul))
+```
