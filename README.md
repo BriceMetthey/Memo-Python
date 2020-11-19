@@ -420,6 +420,40 @@ b : x =  6  nb =  3
 
 c : x =  8  nb =  3     
 
+
+
+### Les méthodes de classe
+
+Pour créer une méthode de classe, il faut la faire précéder d’un « décorateur » : `@classmethod`
+
+Le premier argument de la méthode de classe doit être `cls`.
+
+```python
+class A:
+    nb = 0
+
+    def __init__(self):
+        print("creation objet de type A")
+        A.nb = A.nb + 1
+        print("il y en a maintenant ", A.nb)
+
+    @classmethod
+    def get_nb(cls):
+        return A.nb
+
+print("Partie 1 : nb objets = ", A.get_nb())
+a = A()
+print("Partie 2 : nb objets = ", A.get_nb())
+b = A()
+print("Partie 3 : nb objets = ", A.get_nb())
+```
+
+- Une méthode de classe est une méthode liée à la classe et non à l'objet de la classe.
+
+- Ils ont accès à l'état de la classe car il prend un paramètre de classe qui pointe vers la classe et non l'instance d'objet.
+
+- Il peut modifier un état de classe qui s'appliquerait à toutes les instances de la classe. Par exemple, il peut modifier une variable de classe qui sera applicable à toutes les instances.
+
 ## Héritage
 
 
