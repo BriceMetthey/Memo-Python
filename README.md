@@ -82,6 +82,63 @@ ou
 
 `print("A") if a > b else print("B")`
 
+## Les boucles
+
+```python
+for i in range(4):
+    print("i a pour valeur", i)
+```
+resultat =>
+i a pour valeur 0
+i a pour valeur 1
+i a pour valeur 2
+i a pour valeur 3
+
+` range(start, stop[, step]) -> range object`
+Return an object that produces a sequence of integers from start (inclusive)
+to stop (exclusive) by step.  range(i, j) produces i, i+1, i+2, ..., j-1.
+start defaults to 0, and stop is omitted!
+
+```python
+for k in range(18, 24, 1):
+    print("k a pour valeur", k)
+
+
+c = ["Marc", "est", "dans", "le", "jardin"]
+for i in range(len(c)):
+    print("i vaut", i, "et c[i] vaut", c[i])
+
+
+z = 1
+while z < 10:
+    print("z a pour valeur", z)
+    z = z * 2
+print("Fin")
+```
+
+
+break: fait sortir de la boucle et passer à l’instruction suivante
+```python
+for u in range(10):
+    print("debut iteration", u)
+    print("bonjour")
+    if u == 2:
+        break
+    print("fin iteration", u)
+print("apres la boucle")
+```
+
+
+continue : permet de passer prématurément au tour de boucle suivant
+```python
+for g in range(4):
+    print("debut iteration", g)
+    print("bonjour")
+    if g < 2:
+        continue
+    print("fin iteration", g)
+print("apres la boucle")
+```
 
 ## Les Tuples
 
@@ -121,6 +178,8 @@ tuple = (5, 6, 7)
 for i in tuple:
     print(i)
 ```
+
+## xxx
 
 La valeur d’un élément du tuple est obtenue en utilisant la même syntaxe que pour une liste.
 
