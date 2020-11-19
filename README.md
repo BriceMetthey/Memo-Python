@@ -275,6 +275,40 @@ In global scope: global spam
 Le mot clé nonlocal est utilisé pour travailler avec des variables à l'intérieur de fonctions imbriquées, où la variable ne doit pas appartenir à la fonction interne. 
 Utilisez le mot clé nonlocal pour déclarer que la variable n'est pas locale.
 
+
+## Classe
+
+
+
+Par convention en Python, le nom identifiant une classe (qu’on appelle aussi son identifiant) débute par une majuscule
+
+```python
+class Point:
+    # Exemple Doc sur une seule ligne ->  "Definition d'un point geometrique"
+
+    """
+        Presentation de la classe avec plusieurs lignes\n
+        Super youpi!!!
+    """
+    
+    # Constructeur sans parametre
+    #def __init__(self):
+    #    self.x = 0
+    #    self.y = 0
+
+    # Constructeur avec parametre
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+
+    def deplace(self, dx, dy):
+        self.x = self.x + dx
+        self.y = self.y + dy
+```
+
+Note : ici les attributs de classe sont publiques
+
 ## Héritage
 
 
