@@ -23,6 +23,7 @@ print("Calcul : " + str(calcul))
 
 
 Division euclidienne ou division entière (c’est-à-dire une division dont le résultat est un entier).
+
 Pour réaliser une division entière, il faut utiliser // 
 ```python
 calcul = 7 // 2
