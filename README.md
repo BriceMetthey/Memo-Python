@@ -46,7 +46,7 @@ print("Calcul : " + str(calcul))
 ```
 
 
-## Le IF ELSE
+## Les conditions
 
 ```python
 x = -2
@@ -73,3 +73,11 @@ elif a == b:
 else:
   print("a is greater than b")
 ```
+
+Notations racourcies :
+
+`if a > b: print("a is greater than b")`
+
+ou
+
+`print("A") if a > b else print("B")`
