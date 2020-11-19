@@ -310,7 +310,7 @@ class Point:
 Note : ici les attributs de classe sont publiques
 
 
-## Définition d’attributs privés
+### Définition d’attributs privés
 On réalise la protection des attributs de notre classe Point grâce à l’utilisation d’attributs privées.
 Pour avoir des attributs privés, leur nom doit débuter par __ 
 
