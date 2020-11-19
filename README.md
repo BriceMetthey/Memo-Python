@@ -89,9 +89,13 @@ for i in range(4):
     print("i a pour valeur", i)
 ```
 resultat =>
+
 i a pour valeur 0
+
 i a pour valeur 1
+
 i a pour valeur 2
+
 i a pour valeur 3
 
 ` range(start, stop[, step]) -> range object`
@@ -258,9 +262,13 @@ print("In global scope:", spam)
 ```
 
 Ce qui donne :
+
 After local assignment: test spam
+
 After nonlocal assignment: nonlocal spam
+
 After global assignment: nonlocal spam
+
 In global scope: global spam
 
 
