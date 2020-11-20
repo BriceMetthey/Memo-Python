@@ -905,3 +905,14 @@ if os.path.exists("fichier.txt"):
 else:
   print("Le fichier n'existe pas.")
 ```
+
+## *args and **kwargs
+
+On peut passer un nombre variable d'arguments à une fonction.
+
+Il y a des symboles speciaux pour passer des arguments
+
+1) *args (Non-Keyword Arguments)
+
+2) **kwargs (Keyword Arguments)
+
