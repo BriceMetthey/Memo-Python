@@ -119,7 +119,7 @@ for k in range(18, 24, 1):
     print("k a pour valeur", k)
 
 
-c = ["Marc", "est", "dans", "le", "jardin"]
+c = ["Prénom1", "Prénom2", "Prénom3"]
 for i in range(len(c)):
     print("i vaut", i, "et c[i] vaut", c[i])
 
@@ -158,23 +158,47 @@ print("apres la boucle")
 ## Les listes
 
 ```python
-thislist = ["apple", "banana", "cherry"]
+thislist = ["el1", "el2", "el3"]
 for x in thislist:
   print(x)
 ```
 
 ```python
-thislist = ["apple", "banana", "cherry"]
+thislist = ["el1", "el2", "el3"]
 for i in range(len(thislist)):
   print(thislist[i])
 ```
 
 ```python
-thislist = ["apple", "banana", "cherry"]
+thislist = ["el1", "el2", "el3"]
 i = 0
 while i < len(thislist):
   print(thislist[i])
   i = i + 1
+```
+
+### Modification
+
+```python
+thislist = ["el1", "el2"]
+thislist[1] = "blackcurrant"
+print(thislist)
+```
+
+```python
+thislist = ["el1", "el2", "el3"]
+thislist[1] = ["el2-1", "el2-2"]
+print(thislist)
+
+=> ['el1', ['el2-1', 'el2-2'], 'el3']
+```
+
+```python
+thislist = ["el1", "el2", "el3", "el4"]
+thislist[1:3] = ["nouveau-2", "nouveau-3"]
+print(thislist)
+
+=> ['el1', 'nouveau-2', 'nouveau-3', 'el4']
 ```
 
 ## Les Tuples
