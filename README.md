@@ -1,5 +1,59 @@
 # Memo-Python
 
+
+## Les Modules
+
+Pour créer un module, enregistrez simplement le code souhaité dans un fichier avec l'extension de fichier .py
+Utiliser le module, en utilisant le mot clé `import`
+
+```python monModule.py
+def fonction1(nom):
+  print("Bonjour, " + nom)
+```
+
+```python
+import monModule
+
+monModule.fonction1("Visiteur")
+```
+
+Créez un alias pour monModule mx:
+
+```python
+import monModule as mx
+```
+
+Il existe une fonction intégrée pour lister tous les noms de fonctions (ou noms de variables) dans un module.
+
+```python
+import module1
+
+x = dir(module1)
+print(x)
+```
+
+Importez uniquement classePersonne1 du module :
+
+```python
+from module1 import classePersonne1
+```
+
+```python
+from modname import *
+```
+
+
+Localisation des modules
+
+Lorsque vous importez un module, l interpréteur Python recherche le module de la façon suivante :
+
+1 - Le répertoire actuel
+
+2 - Si le module n est pas trouvé, Python recherche alors chaque répertoire dans la variable shell PYTHONPATH.
+
+3 - Si tout le reste échoue, Python vérifie le chemin par défaut. Sous UNIX, ce chemin par défaut est normalement /usr/local/lib/python/.
+
+
 ## Les calculs simples
 
 La priorité des opérations mathématiques sont respectés
