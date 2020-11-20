@@ -285,7 +285,12 @@ listePrimaire[1] = "toto"
 
 print(listePrimaire)
 print(listeSecondaire)
+
+['el1', 'toto', 'el3']
+['el1', 'el2', 'el3']
 ```
+
+
 
 ## Les Tuples
 
