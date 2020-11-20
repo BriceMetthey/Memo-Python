@@ -849,13 +849,21 @@ y.welcome()
 
 ```python
 try:
-  f = open("demofile.txt")
+  f = open("demo.txt")
   f.write("Lorum Ipsum")
 except:
   print("Something went wrong when writing to the file")
 finally:
   f.close()
 ```
+
+Ou utliser les modes :
+
+`f = open("demo.txt", "a")`
+
+"x" - Create
+"a" - Append
+"w" - Write
 
 ## Lire dans un fichier
 
