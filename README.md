@@ -297,6 +297,26 @@ listePrimaire = ["el1", "el2", "el3"]
 listeSecondaire = list(listePrimaire)
 ```
 
+### Les tris
+
+```python
+liste = ["el1", "el2", "el3"]
+liste.sort()
+```
+
+`liste.sort(reverse = True)`
+
+`liste.reverse()`
+
+```python
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+```
+
 ## Les Tuples
 
 A partir des types de base, il est possible d’en élaborer de nouveaux. On les appelle des types construits.
