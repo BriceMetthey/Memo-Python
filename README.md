@@ -177,7 +177,7 @@ while i < len(thislist):
   i = i + 1
 ```
 
-### Modification de listes
+### Les modification dans les listes
 
 ```python
 thislist = ["el1", "el2"]
@@ -200,6 +200,16 @@ print(thislist)
 
 => ['el1', 'nouveau-2', 'nouveau-3', 'el4']
 ```
+
+### Les insertions
+
+```python
+thislist = ["el1", "el2", "el3", "el4"]
+thislist.insert(2, "nouveau!")
+print(thislist)
+```
+
+
 
 ## Les Tuples
 
