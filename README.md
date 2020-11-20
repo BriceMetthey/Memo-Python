@@ -177,7 +177,7 @@ while i < len(thislist):
   i = i + 1
 ```
 
-### Modification
+### Modification de listes
 
 ```python
 thislist = ["el1", "el2"]
