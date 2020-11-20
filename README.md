@@ -274,6 +274,19 @@ maListe.clear()
 print(maListe)
 ```
 
+
+### Copies de listes
+
+```python
+listePrimaire = ["el1", "el2", "el3"]
+listeSecondaire = listePrimaire.copy()
+
+listePrimaire[1] = "toto"
+
+print(listePrimaire)
+print(listeSecondaire)
+```
+
 ## Les Tuples
 
 A partir des types de base, il est possible d’en élaborer de nouveaux. On les appelle des types construits.
