@@ -856,3 +856,34 @@ except:
 finally:
   f.close()
 ```
+
+## Lire dans un fichier
+
+```python
+# Lire l'integralité du fichier
+f = open("C:\\..\\fichier.txt", "r")
+print(f.read())
+
+
+# Retourner les 4 premiers caracteres du fichier : 
+f = open("fichier.txt", "r")
+print(f.read(4))
+
+
+# Lire 1 ligne du fichier
+f = open("fichier.txt", "r")
+print(f.readline())
+
+
+# Boucle ligne a ligne
+f = open("fichier.txt", "r")
+for ligne in f:
+  print(ligne)
+
+
+# Bonne pratique : Toujours fermer le fichier
+f = open("fichier.txt", "r")
+print(f.readline())
+f.close()
+
+```
