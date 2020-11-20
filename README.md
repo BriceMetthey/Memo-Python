@@ -894,3 +894,14 @@ print(f.readline())
 f.close()
 
 ```
+
+## Suppression du fichier
+
+```python
+import os
+
+if os.path.exists("fichier.txt"):
+  os.remove("fichier.txt")
+else:
+  print("Le fichier n'existe pas.")
+```
