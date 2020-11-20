@@ -906,7 +906,7 @@ else:
   print("Le fichier n'existe pas.")
 ```
 
-## *args and **kwargs
+## *args et **kwargs
 
 On peut passer un nombre variable d'arguments à une fonction.
 
@@ -916,3 +916,48 @@ Il y a des symboles speciaux pour passer des arguments
 
 2) **kwargs (Keyword Arguments)
 
+
+1) *args (Non-Keyword Arguments)
+
+Pour passer un nombre variable d'arguments à une fonction. Il est utilisé pour transmettre une liste d'arguments de longueur variable sans mots clés.
+
+En utilisant le *, la variable que nous associons au * devient une variable itérable, ce qui signifie que vous pouvez faire des choses comme itérer dessus, exécuter des fonctions d'ordre supérieur telles que la carte et le filtre, etc.
+
+```python
+def maFonction(*args): 
+    for arg in args: 
+        print (arg)
+   
+maFonction('el1', 'el2', 'el3', 'el4') 
+maFonction('el1', 'el2') 
+maFonction('el1') 
+```
+
+2) ** kwargs
+
+La syntaxe spéciale ** kwargs dans les définitions de fonction en python est utilisée pour transmettre une liste d'arguments mot-clé de longueur variable. Le nom kwargs avec la double étoile. La raison en est que la double étoile nous permet de passer par des arguments de mots clés.
+
+On peut penser aux kwargs comme étant un dictionnaire qui mappe chaque mot-clé à la valeur que nous lui transmettons.
+
+```python
+def maFonction(**kwargs): 
+    for key, value in kwargs.items():
+        print ("%s == %s" %(key, value))
+ 
+
+maFonction(cle1 ='Valeur1', cle2 ='Valeur2', cle3='Valeur3')  
+maFonction(cle3='Valeur3')
+```
+
+Exemple *args et **kwargs en même temps
+
+```python
+def maFonction(*args,**kwargs):
+    print("args: ", args)
+    print("kwargs: ", kwargs)
+ 
+ 
+maFonction('val1', 'val2', cle1 ='Valeur1', cle2 ='Valeur2', cle3='Valeur3')
+maFonction('val9', cle9 ='Valeur9')
+
+```
