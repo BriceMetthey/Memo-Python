@@ -860,10 +860,9 @@ finally:
 Ou utliser les modes :
 
 `f = open("demo.txt", "a")`
-
-"x" - Create
-"a" - Append
-"w" - Write
+- "x" - Create
+- "a" - Append
+- "w" - Write
 
 ## Lire dans un fichier
 
