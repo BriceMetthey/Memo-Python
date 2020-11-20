@@ -306,15 +306,15 @@ liste.sort()
 
 `liste.sort(reverse = True)`
 
-`liste.reverse()`
+
 
 ```python
-def myfunc(n):
+def mafonction(n):
   return abs(n - 50)
 
-thislist = [100, 50, 65, 82, 23]
-thislist.sort(key = myfunc)
-print(thislist)
+liste = [101, 50, 65, 82, 23]
+liste.sort(key = mafonction)
+print(liste)
 ```
 
 ## Les Tuples
