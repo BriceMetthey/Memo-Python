@@ -155,6 +155,28 @@ for g in range(4):
 print("apres la boucle")
 ```
 
+## Les listes
+
+```python
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+```
+
+```python
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+```
+
+```python
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+```
+
 ## Les Tuples
 
 A partir des types de base, il est possible d’en élaborer de nouveaux. On les appelle des types construits.
