@@ -177,7 +177,7 @@ while i < len(thislist):
   i = i + 1
 ```
 
-### Les modification dans les listes
+### Les modification
 
 ```python
 thislist = ["el1", "el2"]
@@ -207,7 +207,32 @@ print(thislist)
 thislist = ["el1", "el2", "el3", "el4"]
 thislist.insert(2, "nouveau!")
 print(thislist)
+
+=> ['el1', 'el2', 'nouveau!', 'el3', 'el4']
 ```
+
+```python
+maListe = ["el1", "el2", "el3", "el4"]
+maListe.append("toto")
+print(maListe)
+=> ['el1', 'el2', 'el3', 'el4', 'toto']
+```
+
+```python
+maListe = ["el1", "el2", "el3", "el4"]
+maListe.insert(1, "toto")
+print(maListe)
+=> ['el1', 'toto', 'el2', 'el3', 'el4']
+```
+
+```python
+maListe = ["el1", "el2", "el3", "el4"]
+maListe2 = ["el5", "el6", "el7"]
+maListe.extend(maListe2)
+print(maListe)
+=> ['el1', 'el2', 'el3', 'el4', 'el5', 'el6', 'el7']
+```
+
 
 
 
