@@ -6,7 +6,9 @@
 Pour créer un module, enregistrez simplement le code souhaité dans un fichier avec l'extension de fichier .py
 Utiliser le module, en utilisant le mot clé `import`
 
-```python monModule.py
+Fichier monModule.py :
+
+```python 
 def fonction1(nom):
   print("Bonjour, " + nom)
 ```
