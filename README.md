@@ -158,55 +158,55 @@ print("apres la boucle")
 ## Les listes
 
 ```python
-thislist = ["el1", "el2", "el3"]
-for x in thislist:
+maListe = ["el1", "el2", "el3"]
+for x in maListe:
   print(x)
 ```
 
 ```python
-thislist = ["el1", "el2", "el3"]
-for i in range(len(thislist)):
-  print(thislist[i])
+maListe = ["el1", "el2", "el3"]
+for i in range(len(maListe)):
+  print(maListe[i])
 ```
 
 ```python
-thislist = ["el1", "el2", "el3"]
+maListe = ["el1", "el2", "el3"]
 i = 0
-while i < len(thislist):
-  print(thislist[i])
+while i < len(maListe):
+  print(maListe[i])
   i = i + 1
 ```
 
-### Les modification
+### Modifications
 
 ```python
-thislist = ["el1", "el2"]
-thislist[1] = "blackcurrant"
-print(thislist)
+maListe = ["el1", "el2"]
+maListe[1] = "blackcurrant"
+print(maListe)
 ```
 
 ```python
-thislist = ["el1", "el2", "el3"]
-thislist[1] = ["el2-1", "el2-2"]
-print(thislist)
+maListe = ["el1", "el2", "el3"]
+maListe[1] = ["el2-1", "el2-2"]
+print(maListe)
 
 => ['el1', ['el2-1', 'el2-2'], 'el3']
 ```
 
 ```python
-thislist = ["el1", "el2", "el3", "el4"]
-thislist[1:3] = ["nouveau-2", "nouveau-3"]
-print(thislist)
+maListe = ["el1", "el2", "el3", "el4"]
+maListe[1:3] = ["nouveau-2", "nouveau-3"]
+print(maListe)
 
 => ['el1', 'nouveau-2', 'nouveau-3', 'el4']
 ```
 
-### Les insertions
+### Insertions
 
 ```python
-thislist = ["el1", "el2", "el3", "el4"]
-thislist.insert(2, "nouveau!")
-print(thislist)
+maListe = ["el1", "el2", "el3", "el4"]
+maListe.insert(2, "nouveau!")
+print(maListe)
 
 => ['el1', 'el2', 'nouveau!', 'el3', 'el4']
 ```
