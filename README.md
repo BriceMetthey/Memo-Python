@@ -233,8 +233,46 @@ print(maListe)
 => ['el1', 'el2', 'el3', 'el4', 'el5', 'el6', 'el7']
 ```
 
+### Suppressions
 
+```python
+maListe = ["el1", "el2", "el3"]
+maListe.remove("el2")
+print(maListe)
+=> ['el1', 'el3']
+```
 
+```python
+maListe = ["el1", "el2", "el3"]
+maListe.pop(1)
+print(maListe)
+=> ['el1', 'el3']
+```
+
+```python
+maListe = ["el1", "el2", "el3"]
+maListe.pop()
+print(maListe)
+=> ['el1', 'el2']
+```
+
+```python
+maListe = ["el1", "el2", "el3"]
+del maListe[0]
+print(maListe)
+=> ['el2', 'el3']
+```
+
+```python
+maListe = ["el1", "el2", "el3"]
+del maListe
+```
+
+```python
+maListe = ["el1", "el2", "el3"]
+maListe.clear()
+print(maListe)
+```
 
 ## Les Tuples
 
