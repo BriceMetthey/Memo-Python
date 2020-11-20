@@ -36,12 +36,18 @@ Importez uniquement classePersonne1 du module :
 
 ```python
 from module1 import classePersonne1
+from puissance import carre, cube
 ```
 
 ```python
 from modname import *
 ```
 
+```python
+import package1.module1
+
+a = package1.module1.fonctionA()
+```
 
 Localisation des modules
 
