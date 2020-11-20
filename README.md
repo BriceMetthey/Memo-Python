@@ -290,7 +290,12 @@ print(listeSecondaire)
 ['el1', 'el2', 'el3']
 ```
 
+On peut aussi faire :
 
+```python
+listePrimaire = ["el1", "el2", "el3"]
+listeSecondaire = list(listePrimaire)
+```
 
 ## Les Tuples
 
