@@ -161,15 +161,7 @@ ou
 for i in range(4):
     print("i a pour valeur", i)
 ```
-resultat =>
 
-i a pour valeur 0
-
-i a pour valeur 1
-
-i a pour valeur 2
-
-i a pour valeur 3
 
 ` range(start, stop[, step]) -> range object`
 Return an object that produces a sequence of integers from start (inclusive)
@@ -605,6 +597,7 @@ Note : ici les attributs de classe sont publiques
 
 
 ### Définition d’attributs privés
+
 On réalise la protection des attributs de notre classe Point grâce à l’utilisation d’attributs privées.
 Pour avoir des attributs privés, leur nom doit débuter par __ 
 
@@ -671,37 +664,6 @@ print("b : x = ", b.x, " nb = ", b.nb)
 print("c : x = ", c.x, " nb = ", c.nb)
 ```
 
-A : nb =  0
-
-Partie 1
-
-creation objet de type A
-
-A : nb =  1
-
-a : x =  3  nb =  1     
-
-Partie 2
-
-creation objet de type A
-
-A : nb =  2
-
-a : x =  3  nb =  2     
-
-b : x =  6  nb =  2     
-
-creation objet de type A
-
-Partie 3
-
-A : nb =  3
-
-a : x =  3  nb =  3     
-
-b : x =  6  nb =  3     
-
-c : x =  8  nb =  3     
 
 
 
